@@ -14,7 +14,21 @@ export default function Card(props) {
         <h1 className=" text-[22px]  text-primaryColor font-[900] mb-3">
           {Title}
         </h1>
-        <p className="leading-relaxed mb-3">{Description.substring(0, 333)}</p>
+        <p className="leading-relaxed mb-3">{Description.substring(0, 100)}</p>
+        <div className="flex flex-wrap justify-start my-[5px]">
+          {Skills?.map((skill, i) => {
+            return (
+              <div
+                key={i}
+                className="flex justify-center items-center m-1 font-medium py-[6px] px-3 bg-yellow-400 rounded-full text-primaryColor"
+              >
+                <div className="text-[13px] font-[700] leading-none max-w-full flex-initial">
+                  {skill}
+                </div>
+              </div>
+            );
+          })}
+        </div>
         <div className="flex items-center gap-4 flex-wrap ">
           <div
             data-aos="fade-right"

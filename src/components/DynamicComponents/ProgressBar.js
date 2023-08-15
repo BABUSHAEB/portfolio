@@ -6,7 +6,7 @@ const ProgressBar = ({ logo, name, value, duration = 3 }) => {
     <div className="flex flex-col gap-2 sm:gap-1 text-xl font-semibold ">
       <div className="flex justify-between">
         <p className="text-[1rem] flex text-primaryColor items-center gap-3 md:text-[1.15rem] ">
-          {logo} {name}
+          <i className={logo}></i> {name}
         </p>
         {/* <span className=" text-gray-400 text-[1.1rem] sm:text-[1rem] exsm:text-sm">
           {value}%

@@ -1,12 +1,14 @@
 import React from "react";
 import heroImg from "../../assets/images/hero.svg";
 import Resume from "../../assets/AbhishekResume.pdf";
+import SocialIcon from "../DynamicComponents/SocialIcon";
+import { SocialMedia } from "../data/data";
 
 export default function HeroSection() {
   return (
     <section className="pt-0" id="about">
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-[20px] pb-0 md:flex-row flex-col items-center">
+      <div className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 pt-[80px] md:py-[80px] pb-0 md:flex-row flex-col-reverse gap-[40px] md:gap-0 items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-start">
             <h1
               data-aos="fade-right"
@@ -54,38 +56,15 @@ export default function HeroSection() {
                 Follow Me:
               </span>
               <span className="flex md:inherit items-center gap-[15px] md:gap-9 pt-4">
-                <span>
-                  <a
-                    href="#youtube"
-                    className="text-yellow-400 text-[22px] font[600]"
-                  >
-                    <i className="ri-linkedin-box-fill"></i>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="#youtube"
-                    className="text-yellow-400 text-[22px] font[600]"
-                  >
-                    <i className="ri-github-fill"></i>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="#youtube"
-                    className="text-yellow-400 text-[22px] font[600]"
-                  >
-                    <i className="ri-skype-fill"></i>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="#youtube"
-                    className="text-yellow-400 text-[22px] font[600]"
-                  >
-                    <i className="ri-whatsapp-fill"></i>
-                  </a>
-                </span>
+                {SocialMedia?.map((socialm, i) => {
+                  return (
+                    <SocialIcon
+                      key={i}
+                      component="herosection"
+                      socialm={socialm}
+                    />
+                  );
+                })}
               </span>
             </div>
           </div>
@@ -97,7 +76,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 }

@@ -15,7 +15,7 @@ export default function Services() {
           </p>
         </div>
         <div className="flex flex-col justify-center sm:py-12"></div>
-        <div className="w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:ps-0">
+        <div className="w-[100%] py-3 px-2 sm:max-w-xl sm:mx-auto sm:ps-0">
           <div className="relative text-gray-700 antialiased text-sm font-semibold">
             {/* vertical line running through the middle */}
             <div className="hidden absolute w-1 sm:block  bg-indigo-300 h-full left-1/2 transfrom-translate-x-1/2"></div>

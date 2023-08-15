@@ -1,25 +1,25 @@
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Header() {
-  // const headerRef = useRef(null);
+  const headerRef = useRef(null);
   const [toggle, setToggle] = useState(true);
 
-  // const stickyHeaderFunc = () => {
-  //   window.addEventListener("scroll", () => {
-  //     if (
-  //       document.body.scrollTop > 80 ||
-  //       document.documentElement.scrollTop > 80
-  //     ) {
-  //       headerRef.current.classList.add("sticky__header");
-  //     } else {
-  //       headerRef.current.classList.remove("sticky__header");
-  //     }
-  //   });
-  // };
-  // useEffect(() => {
-  //   stickyHeaderFunc();
-  //   return window.removeEventListener("scroll", stickyHeaderFunc);
-  // }, []);
+  const stickyHeaderFunc = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    });
+  };
+  useEffect(() => {
+    stickyHeaderFunc();
+    return window.removeEventListener("scroll", stickyHeaderFunc);
+  }, []);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -34,8 +34,8 @@ export default function Header() {
   return (
     <>
       <nav
-        // ref={headerRef}
-        className="bg-white w-full h-[80px] leading-[80px] flex items-center sticky md:sticky z-20 top-0 left-0 "
+        ref={headerRef}
+        className="bg-white w-full h-[80px] leading-[80px] flex items-center fixed z-20 top-0 left-0 "
       >
         <div className="container">
           <div className="w-full flex flex-wrap items-center justify-between mx-0 px-[10px] py-[20px] md:mx-auto md:px-3 md:py-0 ">

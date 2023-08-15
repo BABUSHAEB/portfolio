@@ -1,12 +1,11 @@
 import React from "react";
-import ProgressBar from "./ProgressBar";
-import Card from "../Card/Card";
-import { PersonalProjects } from "../data/data";
+import Card from "../DynamicComponents/Card";
+import { PersonalProjects, Skills } from "../data/data";
+import ProgressBar from "../DynamicComponents/ProgressBar";
 
 export default function Portfoilo() {
-  console.log(PersonalProjects);
   return (
-    <section id="portfolio" className="container">
+    <section id="portfolio" className="container px-[10px]">
       <div className="mb-[80px] ">
         <div data-aos="fade-up" className="relative mb-5">
           <h3 className="text-[24px] font-black text-primaryColor sm:text-2xl">
@@ -25,40 +24,25 @@ export default function Portfoilo() {
             {/* left box */}
             <div
               data-aos="zoom-in"
-              className="progress flex items-center h-[100%] justify-end md:justify-start"
+              className="progress flex-column flex-wrap md:flex items-center h-[100%] justify-end md:justify-start"
             >
-              <div className=" flex flex-col gap-6  mx-7 md:mx-9 my-5 w-[80%] md:w-[50%]">
-                <ProgressBar
-                  logo={<i className="ri-html5-line"></i>}
-                  name={"HTML"}
-                  value={95}
-                />
-                <ProgressBar
-                  logo={<i className="ri-html5-line"></i>}
-                  name={"CSS"}
-                  value={88}
-                />
-                <ProgressBar
-                  logo={<i className="ri-html5-line"></i>}
-                  name={"Javascript"}
-                  value={80}
-                />
-                <ProgressBar
-                  logo={<i className="ri-html5-line"></i>}
-                  name={"React Js"}
-                  value={80}
-                />
-                <ProgressBar
-                  logo={<i className="ri-html5-line"></i>}
-                  name={"Material UI"}
-                  value={80}
-                />
-                <ProgressBar
-                  logo={<i className="ri-html5-line"></i>}
-                  name={"Tailwind CSS"}
-                  value={70}
-                />
-              </div>
+              {Skills?.map((skill, i) => {
+                return (
+                  <div
+                    key={i}
+                    className=" flex flex-col gap-6  mx-7 md:mx-9 my-5 w-[80%] md:w-1/3"
+                    data-aos={Number(i) % 2 ? "fade-left" : "fade-right"}
+                    data-aos-duration="1500"
+                    data-aos-delay={Number(i) % 2 ? 300 : 400}
+                  >
+                    <ProgressBar
+                      logo={skill.logo}
+                      name={skill.name}
+                      value={skill.value}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

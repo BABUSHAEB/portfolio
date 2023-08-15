@@ -1,4 +1,6 @@
 import React from "react";
+import { SocialMedia } from "../data/data";
+import SocialIcon from "../DynamicComponents/SocialIcon";
 
 export default function Footer() {
   let date = new Date();
@@ -19,7 +21,12 @@ export default function Footer() {
               Let's Talk
             </h1>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 md:mt-5 gap-4 justify-center sm:justify-start">
-              <span>
+              {SocialMedia?.map((socialm, i) => {
+                return (
+                  <SocialIcon key={i} socialm={socialm} component="footer" />
+                );
+              })}
+              {/* <span>
                 <a
                   href="#youtube"
                   className="text-primaryColor hover:text-white text-[28px]  md:text-[34px] font[600]"
@@ -58,7 +65,7 @@ export default function Footer() {
                 >
                   <i className="ri-phone-fill"></i>
                 </a>
-              </span>
+              </span> */}
             </span>
           </div>
           <div>
