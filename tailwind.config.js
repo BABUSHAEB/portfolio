@@ -12,6 +12,9 @@ module.exports = {
         headingColor: "#081e21",
         smallTextColor: "#193256",
       },
+      boxShadow: {
+        md: "0 10px 10px 5px #8873ef",
+      },
     },
   },
   plugins: [],
