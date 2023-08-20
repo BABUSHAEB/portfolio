@@ -31,7 +31,7 @@ export default function SocialIcon({
             rel="noreferrer"
             target="_blank"
             title={title}
-            className="text-primaryColor hover:text-white text-[28px]  md:text-[34px] font[600]"
+            className="text-yellow-500 hover:text-white text-[28px]  md:text-[34px] font[600]"
           >
             <i className={icon}></i>
           </a>

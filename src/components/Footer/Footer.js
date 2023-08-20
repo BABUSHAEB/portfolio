@@ -3,14 +3,14 @@ import { SocialMedia } from "../data/data";
 import SocialIcon from "../DynamicComponents/SocialIcon";
 
 export default function Footer() {
-  let date = new Date();
-  date = date.getFullYear();
+  // let date = new Date();
+  // date = date.getFullYear();
   return (
-    <footer className="text-gray-600  relative  ">
-      <div className="bg-yellow-400 h-[200px]  w-[100%]">
+    <footer className="bg-turquoise  relative  ">
+      <div className="container h-[200px]  w-[100%]">
         <div
           data-aos="fade-up"
-          className=" px-5 py-6 flex-row align-center justify-between  md:flex-col md:align-center"
+          className=" px-5 py-6 flex-row align-center justify-center text-center  md:flex-col md:align-center"
         >
           <div>
             <h1
@@ -18,7 +18,7 @@ export default function Footer() {
               data-aos-duration="1500"
               className="text-white font-[800] text-[1.8rem]  md:text-[42px] leading-[35px] sm:leading-[46px] py-3"
             >
-              Let's Talk
+              Let's Connect
             </h1>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 md:mt-5 gap-4 justify-center sm:justify-start">
               {SocialMedia?.map((socialm, i) => {
@@ -68,7 +68,7 @@ export default function Footer() {
               </span> */}
             </span>
           </div>
-          <div>
+          {/* <div>
             <p className="text-[13px] md:text-[18px] text-primaryColor text-center md:text-right mt-[20px]  md:mt-0 ">
               © {date} All Copyright Reserved&nbsp;-&nbsp;
               <a
@@ -80,7 +80,7 @@ export default function Footer() {
                 @Abhishek
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

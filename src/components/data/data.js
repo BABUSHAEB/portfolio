@@ -19,6 +19,7 @@ export const PersonalProjects = [
       "I have created it to Enhance my Skills in React. The beauty of this project is that it has a theme of Dark and Bright, It is able to perform such operations as Upper Case , Lower Case, Count letters & words, reverse the Entire paragraph, Copy all the paragraphs in the text box remove extra Spaces and Download Text in '.txt' Format.",
     ViewProject: "https://texttools.vercel.app/",
     ViewCode: "https://github.com/BABUSHAEB/TextTools",
+    status: "old",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const PersonalProjects = [
       "I have created this Application to Ehance my knowledge towards in API Integration.In this application I have use Axios Package to Use API Integration with Error Handling and I have done Validation to Input Field .I'm fetching data from Open weather API . I'm showing Sunrise, Sunset and Max , Min Feel Like tempurature ,Current Date.Converting Kevlin to Celcus",
     ViewProject: "https://apiweatherapp.vercel.app/",
     ViewCode: "https://github.com/BABUSHAEB/weatherapp",
+    status: "old",
   },
   {
     Title: "Tour Advisor",
@@ -60,6 +62,7 @@ export const PersonalProjects = [
       "I have created this Application to Ehance my knowledge towards in API Integration.In this application I have use Axios Package to Use API Integration with Error Handling and I have done Validation to Input Field .I'm fetching data from Open weather API . I'm showing Sunrise, Sunset and Max , Min Feel Like tempurature ,Current Date.Converting Kevlin to Celcus",
     ViewProject: "https://abhishek-touradvisor.vercel.app/",
     ViewCode: " https://github.com/BABUSHAEB/tour-advisor",
+    status: "new",
   },
   {
     Title: "Mega Movies",
@@ -81,6 +84,7 @@ export const PersonalProjects = [
       "I have created this Application to Ehance my knowledge towards in API Integration.In this application I have use Axios Package to Use API Integration with Error Handling and I have done Validation to Input Field .I'm fetching data from Open weather API . I'm showing Sunrise, Sunset and Max , Min Feel Like tempurature ,Current Date.Converting Kevlin to Celcus",
     ViewProject: "https://movie-mega.vercel.app/",
     ViewCode: " https://github.com/BABUSHAEB/MovieMega",
+    status: "new",
   },
 ];
 

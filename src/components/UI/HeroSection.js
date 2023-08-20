@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import heroImg from "../../assets/images/hero.svg";
 import Resume from "../../assets/AbhishekResume.pdf";
 import SocialIcon from "../DynamicComponents/SocialIcon";
 import { SocialMedia } from "../data/data";
+import Typed from "typed.js";
 
 export default function HeroSection() {
+  const roles = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(roles.current, {
+      strings: [
+        "Front-End Developer",
+        "JavaScript Developer",
+        "ReactJs Developer",
+        "Web Developer",
+      ], // Strings to display
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 200,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      backDelay: 200,
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <section className="pt-0" id="about">
       <div className="text-gray-600 body-font">
@@ -16,14 +40,22 @@ export default function HeroSection() {
               className="text-primaryColor font-[800] text-[1.8rem]  md:text-[40px] leading-[35px] sm:leading-[46px] pb-5"
             >
               I'm Abhishek Singh <br />
-              <span className="text-yellow-500 pt-[80px]">Web Developer</span>
+              <span className="text-yellow-500 pt-[80px]" ref={roles}></span>
             </h1>
 
-            <p className="mb-8 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+            <p className="mb-8 text-black  leading-relaxed">
+              Begin my journey in front-end development in November 2021,
+              initially as an SAP UI5 Trainee at Arteria Technologies Pvt. Ltd.,
+              and later on, I joined Harns Technologies as Software Developer in
+              September 2022. where I used to work on Technologies like React,
+              Material UI, JavaScript, API Handling, React Router, NextJs,
+              Tailwind CSS, and other Animation libraries.
+              {/* Started my journey in front-end development in Nov 2021, initially
+              as a SAP UI5 Trainee at Arteria Technologies Pvt Ltd, and later I
+              joined Harns Technologies Pvt. Ltd. as a Software Developer where
+              I worked on React, Material UI, JavaScript, React Router, NextJS,
+              Tailwind CSS, Adaptable expertise across a range of technologies
+              to build dynamic web solutions. */}
             </p>
 
             <div

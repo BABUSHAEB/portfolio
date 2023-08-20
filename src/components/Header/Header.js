@@ -39,23 +39,27 @@ export default function Header() {
       >
         <div className="container">
           <div className="w-full flex flex-wrap items-center justify-between mx-0 px-[10px] py-[20px] md:mx-auto md:px-3 md:py-0 ">
-            <div className="flex items-center gap-[3px]  md:gap-[10px]">
-              <span className="w-[35px] h-[35px]  bg-primaryColor text-white text-[18px] md:text-[18px] font-[500]  rounded-full flex items-center justify-center">
-                A
-              </span>
-              <div className="leading-[20px]">
-                <h2 className="text-xl text-smallTextColor font-[700]">
-                  Abhishek
-                </h2>
-                <p className="text-smallTextColor text-[14px] font-[500]">
-                  Singh
-                </p>
+            <a onClick={handleClick} href="#about" aria-current="page">
+              <div className="flex items-center gap-[3px]  md:gap-[10px]">
+                <span className="w-[35px] h-[35px]  bg-primaryColor text-white text-[18px] md:text-[18px] font-[500]  rounded-full flex items-center justify-center">
+                  A
+                </span>
+                <div className="leading-[20px]">
+                  <h2 className="text-xl text-smallTextColor font-[700]">
+                    Abhishek
+                  </h2>
+                  <p className="text-smallTextColor text-[14px] font-[500]">
+                    Singh
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
             <div className="flex md:order-2 gap-3 md:gap-2">
-              <button className="flex items-center gap-2 text-yellow-400 font-[600] border border-solid border-yellow-400 py-1 px-2 md:py-2 md:px-4 rounded-[8px] max-h-[40px] hover:bg-yellow-400 hover:text-white hover:font-[500] ease-in duration-300">
-                <i className="ri-send-plane-line"></i> Let's Talk
-              </button>
+              <a onClick={handleClick} href="#letsConnect" aria-current="page">
+                <button className="flex items-center gap-2 text-yellow-400 font-[600] border border-solid border-yellow-400 py-1 px-2 md:py-2 md:px-4 rounded-[8px] max-h-[40px] hover:bg-yellow-400 hover:text-white hover:font-[500] ease-in duration-300">
+                  <i className="ri-send-plane-line"></i> Let's Connect
+                </button>
+              </a>
 
               <span
                 onClick={() => setToggle(!toggle)}
@@ -97,16 +101,25 @@ export default function Header() {
                 <li>
                   <a
                     onClick={handleClick}
-                    href="#portfolio"
+                    href="#Skills"
                     className="text-smallText font-[600]"
                   >
-                    Portfoilo
+                    Skills
                   </a>
                 </li>
                 <li>
                   <a
                     onClick={handleClick}
-                    href="#services"
+                    href="#works"
+                    className="text-smallText font-[600]"
+                  >
+                    Works
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={handleClick}
+                    href="#letsConnect"
                     className="text-smallText font-[600]"
                   >
                     Contact

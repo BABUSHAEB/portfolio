@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       colors: {
         // primaryColor: "#8873ef",
+        // #2ecec2 //turquoise
+
+        turquoise: "#01b3d4", //turquoise
+        // yellow: "#FaCC15", //yellow
         primaryColor: "#2b1de1",
         headingColor: "#081e21",
         smallTextColor: "#193256",

@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../DynamicComponents/Card";
 import { PersonalProjects, Skills } from "../data/data";
 import ProgressBar from "../DynamicComponents/ProgressBar";
 
 export default function Portfoilo() {
+  const [filtered, setFiltered] = useState([]);
+  const [isFiltered, setIsFiltered] = useState(true);
+  const filteredHandle = (para) => {
+    setIsFiltered(!isFiltered);
+    if (para === "latest") {
+      let filtered = PersonalProjects.filter((items) => {
+        return items.status === "new";
+      });
+      setFiltered(filtered);
+    } else {
+      setFiltered(PersonalProjects);
+    }
+
+    // status:"new"
+  };
+  useEffect(() => {
+    setFiltered(PersonalProjects);
+  }, []);
+
   return (
-    <section id="portfolio" className="container px-[10px]">
-      <div className="mb-[80px] ">
+    <section className="container px-[10px]">
+      <div id="Skills" className="mb-[80px] ">
         <div data-aos="fade-up" className="relative mb-5">
           <h3 className="text-[24px] font-black text-primaryColor sm:text-2xl">
             My Skills
@@ -48,12 +67,29 @@ export default function Portfoilo() {
         </div>
       </div>
 
-      <div>
+      <div id="works">
         <div data-aos="fade-up" className="relative mb-5">
-          <h3 className="text-[24px] font-black text-primaryColor sm:text-2xl">
-            Works
-          </h3>
-          <span className="h-[1.1px] right-0 absolute w-[85%] md:w-[90%] bg-gray-300 block"></span>
+          <div className="flex align-center justify-between py-[10px]">
+            <h3 className="text-[28px] font-black text-primaryColor md:text-[32px]">
+              Works
+            </h3>
+            {isFiltered ? (
+              <button
+                onClick={() => filteredHandle("latest")}
+                className="bg-yellow-400 text-[18px] text-white font-[500] flex items-center gap-2 hover:bg-yellow-300 ease-in duration-300 py-1 px-4 rounded-[8px] "
+              >
+                Latest Project
+              </button>
+            ) : (
+              <button
+                onClick={() => filteredHandle("reset")}
+                className="bg-yellow-400 text-[18px] text-white font-[500] flex items-center gap-2 hover:bg-yellow-300 ease-in duration-300 py-1 px-4 rounded-[8px] "
+              >
+                Reset
+              </button>
+            )}
+          </div>
+          <span className="h-[1.5px] right-0 absolute w-[85%] md:w-[90%] bg-gray-300 block"></span>
           <p
             data-aos="fade-up"
             className=" text-gray-700 mt-4 font-medium w-[100%]"
@@ -62,7 +98,7 @@ export default function Portfoilo() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {PersonalProjects?.map((project, i) => {
+          {filtered?.map((project, i) => {
             return (
               <div key={i} className="p-4  md:w-1/3">
                 <Card project={project} />

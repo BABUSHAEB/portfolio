@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/UI/HeroSection";
 import Services from "./components/UI/Services";
 import Portfoilo from "./components/UI/Portfoilo";
+import ContactForms from "./components/Forms/ContactForms";
 
 function App() {
   useEffect(() => {
@@ -14,12 +15,13 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <div>
         <Header />
-        <main>
+        <main className="container">
           <HeroSection />
           <Services />
           <Portfoilo />
+          <ContactForms />
         </main>
         <Footer />
       </div>
