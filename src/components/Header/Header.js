@@ -55,12 +55,17 @@ export default function Header() {
               </div>
             </a>
             <div className="flex md:order-2 gap-3 md:gap-2">
-              <a onClick={handleClick} href="#letsConnect" aria-current="page">
+              <div>
                 <button className="flex items-center gap-2 text-yellow-400 font-[600] border border-solid border-yellow-400 py-1 px-2 md:py-2 md:px-4 rounded-[8px] max-h-[40px] hover:bg-yellow-400 hover:text-white hover:font-[500] ease-in duration-300">
-                  <i className="ri-send-plane-line"></i> Let's Connect
+                  <a
+                    onClick={handleClick}
+                    href="#letsConnect"
+                    aria-current="page"
+                  >
+                    <i className="ri-send-plane-line"></i> Let's Connect
+                  </a>
                 </button>
-              </a>
-
+              </div>
               <span
                 onClick={() => setToggle(!toggle)}
                 className="text-2xl block md:hidden text-smallTextColor cursor-pointer "

@@ -60,18 +60,31 @@ const ContactForms = () => {
   return (
     <div id="letsConnect" className="container">
       <div className="flex flex-wrap align-center">
-        <div className=" md:w-1/3 mx-[auto]  md:my-[auto] md:rounded md:px-[30px] w-[80%] py-[80px] my-[auto]">
-          <strong> Hi, </strong>my name is Abhishek Singh, and I'm eager to
-          Start Career in Front End Developer.
-          <br />
-          My goal is to be Pro Developer and gain Knowledge in others Modern
-          Technology .<br />
-          My philosophy is to gain Knowledge by creating quality Application,
-          That's why I put a lot of effort into every single Application.
-          <h3 className="aboutme-heading"> Contact Me :</h3>
-          <a href="mailto:abhisheksingj123@gmail.com">
-            abhisheksingj123@gmail.com
-          </a>
+        <div className=" text-black gap-3 md:w-1/3 mx-[auto]  md:my-[auto] md:rounded md:px-[30px] w-[80%] py-[80px] my-[auto]">
+          I'm enthusiastic about Front End Development and Creating User
+          Interfaces/ Client-side using Modern Libraries & Frameworks. On the
+          way to Become Pro.. If any suggestions, please let me know, It will be
+          a great help. 😄
+          <div className="flex-col pt-2">
+            <h3 className="font-[700] text-[18px]"> Contact On :</h3>
+            <div>
+              <a
+                href="mailto:abhisheksingj123@gmail.com"
+                className="text-primaryColor text-[16px] font-[600]"
+              >
+                Email : abhisheksingj123@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="tel:+918521268654"
+                className="text-primaryColor text-[16px] font-[600]"
+              >
+                Mobile No : 8521268654
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* forms */}
@@ -196,7 +209,7 @@ const ContactForms = () => {
             <div className=" mt-5">
               <button
                 onClick={handleSubmit}
-                className="bg-turquoise text-[18px] py-[10px] w-[100%] md:w-[auto] md:text-[26px] text-white font-[500] flex items-center justify-center gap-2 hover:bg-yellow-300 ease-in duration-300 md:py-1 px-6 rounded-[8px] "
+                className="bg-turquoise text-[18px] py-[10px] w-[100%] md:w-[auto] md:text-[22px] text-white font-[500] flex items-center justify-center gap-2 hover:bg-yellow-300 ease-in duration-300 md:py-1 px-6 rounded-[8px] "
               >
                 Connect
               </button>

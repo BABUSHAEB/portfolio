@@ -30,7 +30,7 @@ export default function HeroSection() {
     };
   }, []);
   return (
-    <section className="pt-0" id="about">
+    <section className="pt-0 mx-[auto]" id="about">
       <div className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 pt-[80px] md:py-[80px] pb-0 md:flex-row flex-col-reverse gap-[40px] md:gap-0 items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-start">
@@ -40,7 +40,9 @@ export default function HeroSection() {
               className="text-primaryColor font-[800] text-[1.8rem]  md:text-[40px] leading-[35px] sm:leading-[46px] pb-5"
             >
               I'm Abhishek Singh <br />
-              <span className="text-yellow-500 pt-[80px]" ref={roles}></span>
+              <span className="text-yellow-500 pt-[80px]">
+                &lt; <span ref={roles}> </span> &gt;
+              </span>
             </h1>
 
             <p className="mb-8 text-black  leading-relaxed">
@@ -64,7 +66,7 @@ export default function HeroSection() {
               data-aos-delay="200"
               className="flex items-center gap-6 pt-7"
             >
-              <a href="#contact">
+              <a href="#letsConnect">
                 <button className="bg-yellow-400 text-white font-[500] flex items-center gap-2 hover:bg-yellow-300 ease-in duration-300 py-2 px-4 rounded-[8px] ">
                   <i className="ri-mail-line"></i> Hire Me!
                 </button>
