@@ -4,7 +4,7 @@ const GetInTouch = () => {
   const [formValues, setFormValues] = useState([]);
   const [formValidation, setFormValidation] = useState({});
 
-  const [response, setResponse] = useState(false);
+  const [response, setResponse] = useState(true);
 
   // form values
   const handleChange = (e) => {
@@ -50,26 +50,30 @@ const GetInTouch = () => {
       return;
     } else {
       setResponse(true);
-
-      setTimeout(() => {
-        setResponse(false);
-      }, 5000);
     }
-    console.log("Errors", errors);
-    console.log("form has Errors", hasErrors);
-    console.log(formValues);
   };
-
-  // useEffect(() => {
-
-  // }, [response]);
+  useEffect(() => {
+    setTimeout(() => {
+      setResponse(false);
+      setFormValues([]);
+    }, 100000);
+  }, [response]);
 
   return (
     <div>
       <div>
         {response ? (
-          <div className=" animate-bounce  md:my-[30px] md:rounded md:bg-gray-100 md:px-[30px] w-[80%] pt-[40px] pb-[40px] mx-[auto] md:w-[80%] lg:w-1/3">
-            <h2>Hellow World!</h2>
+          <div class="lg:w-[80%]  text-center my-3 flex-wrap md:w-[auto] h-[inherit] relative  py-[80px] bg-white rounded-lg px-[20px] md:p-8 flex flex-col align-center justify-center mx-[auto] md:ml-auto w-full mt-10 md:mt-0  md:shadow-md">
+            <p class="leading-relaxed mb-5  text-[100px]">&#129409;</p>
+
+            <p class="text-[14px] text-black font-[800] text-start ">
+              <span className="text-[24px] font-[800]">Oh!</span>Functionality
+              is not Added. Please, Contact me through email or Phone number .
+              <br />
+            </p>
+            <p className="text-start text-primaryColor py-[10px] font-[800]">
+              Mobile : 918521268654 <br /> Email: abhisheksingj123@gmail.com
+            </p>
           </div>
         ) : (
           <form className="md:my-[30px] md:rounded md:bg-gray-100 md:px-[30px] w-[80%] pt-[40px] pb-[40px] mx-[auto] md:w-[auto] lg:w-5/3">
