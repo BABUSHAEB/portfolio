@@ -9,9 +9,15 @@ export default function Services() {
             What do I help
           </h2>
           <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[500] text-[16px] leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
             consequatur magnam sint deleniti rem, facilis distinctio
-            reprehenderit nihil tempora atque.
+            reprehenderit nihil tempora atque. */}
+            My experience at my last company was incredibly enriching and
+            positive. It provided me with a platform to excel as a front-end
+            developer, allowing me to contribute to exciting projects and
+            collaborate with a talented team. The supportive environment
+            fostered both personal and professional growth, leaving me equipped
+            and enthusiastic to take on new challenges.
           </p>
         </div>
         <div className="flex flex-col justify-center sm:py-12"></div>
