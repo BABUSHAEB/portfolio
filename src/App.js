@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/UI/HeroSection";
 import Services from "./components/UI/Services";
 import Portfoilo from "./components/UI/Portfoilo";
-import ContactForms from "./components/Forms/ContactForms";
+import LetsConnectSection from "./components/UI/LetsConnectSection";
 
 function App() {
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
           <HeroSection />
           <Services />
           <Portfoilo />
-          <ContactForms />
+          <LetsConnectSection />
         </main>
         <Footer />
       </div>

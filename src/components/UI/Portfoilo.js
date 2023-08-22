@@ -100,7 +100,7 @@ export default function Portfoilo() {
         <div className="flex flex-wrap -m-4">
           {filtered?.map((project, i) => {
             return (
-              <div key={i} className="p-4  md:w-1/3">
+              <div key={i} className="p-4  md:w-1/2 lg:w-1/3">
                 <Card project={project} />
               </div>
             );

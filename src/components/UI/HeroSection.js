@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import heroImg from "../../assets/images/hero.svg";
-import Resume from "../../assets/AbhishekResume.pdf";
+import Resume from "../../assets/Abhishek-Resume.pdf";
 import SocialIcon from "../DynamicComponents/SocialIcon";
 import { SocialMedia } from "../data/data";
 import Typed from "typed.js";
@@ -37,21 +37,30 @@ export default function HeroSection() {
             <h1
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="text-primaryColor font-[800] text-[1.8rem]  md:text-[40px] leading-[35px] sm:leading-[46px] pb-5"
+              className="text-primaryColor font-[700]   text-[24px] md:text-[26px] lg:text-[42px] leading-[35px] sm:leading-[46px] pb-5"
             >
-              I'm Abhishek Singh <br />
+              I'm Abhishek Singh &amp;
+              <br />
               <span className="text-yellow-500 pt-[80px]">
                 &lt; <span ref={roles}> </span> &gt;
               </span>
             </h1>
 
             <p className="mb-8 text-black  leading-relaxed">
-              Begin my journey in front-end development in November 2021,
+              I am a seasoned front-end developer with a strong background in
+              both the software industry and startup sector. I am actively
+              seeking a fulfilling role where I can apply my expertise in
+              Material UI, JavaScript, and React.js to contribute to innovative
+              web projects. My proficiency in Hooks, Rest API, Chartjs,
+              animation libraries, and responsiveness enables me to create
+              dynamic and user-friendly interfaces that enhance user
+              experiences.
+              {/* Begin my journey in front-end development in November 2021,
               initially as an SAP UI5 Trainee at Arteria Technologies Pvt. Ltd.,
               and later on, I joined Harns Technologies as Software Developer in
               September 2022. where I used to work on Technologies like React,
               Material UI, JavaScript, API Handling, React Router, NextJs,
-              Tailwind CSS, and other Animation libraries.
+              Tailwind CSS, and other Animation libraries. */}
               {/* Started my journey in front-end development in Nov 2021, initially
               as a SAP UI5 Trainee at Arteria Technologies Pvt Ltd, and later I
               joined Harns Technologies Pvt. Ltd. as a Software Developer where

@@ -6,7 +6,7 @@ export default function Card(props) {
   return (
     <div className="h-[100%] border-2 border-yellow-300 border-opacity-40 rounded-lg hover:shadow-md overflow-hidden">
       <img
-        className="lg:h-48 md:h-42 w-full object-cover object-center"
+        className="md:h-[200px] lg:h-[260px] w-full object-cover object-center"
         src={Image ? Image : "https://dummyimage.com/720x400"}
         alt="blog"
       />

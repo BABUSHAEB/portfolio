@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 
-const ContactForms = () => {
+const GetInTouch = () => {
   const [formValues, setFormValues] = useState([]);
   const [formValidation, setFormValidation] = useState({});
+
+  const [response, setResponse] = useState(false);
 
   // form values
   const handleChange = (e) => {
@@ -21,12 +23,6 @@ const ContactForms = () => {
       errors.firstName = "First Name is required!";
     } else if (!nameRegex.test(values.firstName)) {
       errors.firstName = "Please enter a valid First Name";
-    }
-
-    if (!values.lastName) {
-      errors.lastName = "Last Name is required!";
-    } else if (!nameRegex.test(values.firstName)) {
-      errors.firstName = "Please enter a valid Last Name";
     }
 
     if (!values.email) {
@@ -52,44 +48,34 @@ const ContactForms = () => {
     if (hasErrors) {
       setFormValidation(errors);
       return;
+    } else {
+      setResponse(true);
+
+      setTimeout(() => {
+        setResponse(false);
+      }, 5000);
     }
     console.log("Errors", errors);
     console.log("form has Errors", hasErrors);
     console.log(formValues);
   };
+
+  // useEffect(() => {
+
+  // }, [response]);
+
   return (
-    <div id="letsConnect" className="container">
-      <div className="flex flex-wrap align-center">
-        <div className=" text-black gap-3 md:w-1/3 mx-[auto]  md:my-[auto] md:rounded md:px-[30px] w-[80%] py-[80px] my-[auto]">
-          I'm enthusiastic about Front End Development and Creating User
-          Interfaces/ Client-side using Modern Libraries & Frameworks. On the
-          way to Become Pro.. If any suggestions, please let me know, It will be
-          a great help. 😄
-          <div className="flex-col pt-2">
-            <h3 className="font-[700] text-[18px]"> Contact On :</h3>
-            <div>
-              <a
-                href="mailto:abhisheksingj123@gmail.com"
-                className="text-primaryColor text-[16px] font-[600]"
-              >
-                Email : abhisheksingj123@gmail.com
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="tel:+918521268654"
-                className="text-primaryColor text-[16px] font-[600]"
-              >
-                Mobile No : 8521268654
-              </a>
-            </div>
+    <div>
+      <div>
+        {response ? (
+          <div className=" animate-bounce  md:my-[30px] md:rounded md:bg-gray-100 md:px-[30px] w-[80%] pt-[40px] pb-[40px] mx-[auto] md:w-[80%] lg:w-1/3">
+            <h2>Hellow World!</h2>
           </div>
-        </div>
-
-        {/* forms */}
-        <div>
-          <form className="md:my-[30px] md:rounded md:bg-gray-100 md:px-[30px] w-[80%] pt-[80px] pb-[40px] mx-[auto] md:w-5/3">
+        ) : (
+          <form className="md:my-[30px] md:rounded md:bg-gray-100 md:px-[30px] w-[80%] pt-[40px] pb-[40px] mx-[auto] md:w-[auto] lg:w-5/3">
+            <div className="text-[24px] text-primaryColor font-[800] -ml-[5px] pb-[20px]">
+              GET IN TOUCH
+            </div>
             <div className="flex flex-wrap -mx-3 mb-6 ">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -215,10 +201,9 @@ const ContactForms = () => {
               </button>
             </div>
           </form>
-        </div>
+        )}
       </div>
     </div>
   );
 };
-
-export default ContactForms;
+export default GetInTouch;
