@@ -4,7 +4,7 @@ const GetInTouch = () => {
   const [formValues, setFormValues] = useState([]);
   const [formValidation, setFormValidation] = useState({});
 
-  const [response, setResponse] = useState(true);
+  const [response, setResponse] = useState(false);
 
   // form values
   const handleChange = (e) => {
@@ -56,7 +56,7 @@ const GetInTouch = () => {
     setTimeout(() => {
       setResponse(false);
       setFormValues([]);
-    }, 100000);
+    }, 10000);
   }, [response]);
 
   return (
