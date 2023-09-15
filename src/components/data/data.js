@@ -112,11 +112,31 @@ export const Skills = [
   {
     logo: "ri-html5-line",
     name: "Material UI",
-    value: "88",
+    value: "70",
+  },
+  {
+    logo: "",
+    name: "NodeJs",
+    value: "74",
+  },
+  {
+    logo: "",
+    name: "MongoDB",
+    value: "80",
+  },
+  {
+    logo: "",
+    name: "NextJs",
+    value: "80",
+  },
+  {
+    logo: " ",
+    name: "Express",
+    value: "70",
   },
   {
     logo: "ri-bootstrap-line",
-    name: "Bootstrap",
+    name: "Tailwind CSS",
     value: "70",
   },
 ];
