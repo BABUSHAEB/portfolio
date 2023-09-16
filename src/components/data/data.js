@@ -6,6 +6,8 @@ export const PersonalProjects = [
     Image: "https://i.postimg.cc/FsW7fWZw/Texttools.png",
     IDE: "Visual Studio Code",
     Role: "UI Development",
+    Project: "React",
+
     Skills: [
       "JSX",
       "CSS",
@@ -28,6 +30,8 @@ export const PersonalProjects = [
     Image: "https://i.postimg.cc/FKFWPKcY/APIWeather-App.png",
     IDE: "Visual Studio Code",
     Role: "UI Development",
+    Project: "React",
+
     Skills: [
       "JSX",
       "CSS",
@@ -49,6 +53,8 @@ export const PersonalProjects = [
     Image: "https://i.postimg.cc/Gtykh3zK/tour-advisor.png",
     IDE: "Visual Studio Code",
     Role: "UI Development",
+    Project: "React",
+
     Skills: [
       "JSX",
       "CSS",
@@ -70,6 +76,7 @@ export const PersonalProjects = [
     Image: "https://i.postimg.cc/sgJC22Cm/mega-Movies.png",
     IDE: "Visual Studio Code",
     Role: "UI Development",
+    Project: "React",
     Skills: [
       "JSX",
       "CSS",
