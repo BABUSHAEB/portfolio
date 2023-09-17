@@ -11,6 +11,9 @@ module.exports = {
         // #2ecec2 //turquoise
 
         turquoise: "#01b3d4", //turquoise
+        desktopBackground:
+          "linear-gradient(180deg, #265FC4 -42.75%, #15191A 91.36%)", //turquoise
+        mobileBackground: "#222728", //turquoise
         // yellow: "#FaCC15", //yellow
         primaryColor: "#2b1de1",
         headingColor: "#081e21",

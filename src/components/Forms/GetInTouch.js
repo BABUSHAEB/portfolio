@@ -63,10 +63,10 @@ const GetInTouch = () => {
     <div>
       <div>
         {response ? (
-          <div class="lg:w-[80%]  text-center my-3 flex-wrap md:w-[auto] h-[inherit] relative  py-[80px] bg-white rounded-lg px-[20px] md:p-8 flex flex-col align-center justify-center mx-[auto] md:ml-auto w-full mt-10 md:mt-0  md:shadow-md">
-            <p class="leading-relaxed mb-5  text-[100px]">&#129409;</p>
+          <div className=" lg:w-[80%]  text-center my-3 flex-wrap md:w-[auto] h-[inherit] relative  py-[80px] bg-white rounded-lg px-[20px] md:p-8 flex flex-col align-center justify-center mx-[auto] md:ml-auto w-full mt-10 md:mt-0  md:shadow-md">
+            <p className="leading-relaxed mb-5  text-[100px]">&#129409;</p>
 
-            <p class="text-[14px] text-black font-[800] text-start ">
+            <p className="text-[14px] text-black font-[800] text-start ">
               <span className="text-[24px] font-[800]">Oh!</span>Functionality
               is not Added. Please, Contact me through email or Phone number .
               <br />
@@ -83,10 +83,10 @@ const GetInTouch = () => {
             <div className="flex flex-wrap -mx-3 mb-6 ">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-first-name"
+                  className="block uppercase tracking-wide text-white  md:text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-first-name"
                 >
-                  First Name{" "}
+                  First Name
                   <sup className="text-red-500 font-[800] text-[15px]">*</sup>
                 </label>
                 <input
@@ -96,7 +96,7 @@ const GetInTouch = () => {
                     formValidation?.firstName
                       ? "border-red-500"
                       : "border-gray-200"
-                  } block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`}
+                  } block w-full bg-gray-200 text-white  md:text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`}
                   id="grid-first-name"
                   type="text"
                   placeholder="Jane"
@@ -107,15 +107,15 @@ const GetInTouch = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-last-name"
+                  className="block uppercase tracking-wide text-white  md:text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-last-name"
                 >
                   Last Name
                 </label>
                 <input
                   name="lastName"
                   onChange={handleChange}
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className="appearance-none block w-full bg-gray-200 text-white  md:text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-last-name"
                   type="text"
                   placeholder="Doe"
@@ -125,8 +125,8 @@ const GetInTouch = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-password"
+                  className="block uppercase tracking-wide text-white  md:text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-password"
                 >
                   Email{" "}
                   <sup className="text-red-500 font-[800] text-[15px]">*</sup>
@@ -136,7 +136,7 @@ const GetInTouch = () => {
                   onChange={handleChange}
                   className={`appearance-none ${
                     formValidation?.email ? "border-red-500" : "border-gray-200"
-                  } block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`}
+                  } block w-full bg-gray-200 text-white  md:text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`}
                   id="grid-email"
                   type="email"
                 />
@@ -148,8 +148,8 @@ const GetInTouch = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-mobile"
+                  className="block uppercase tracking-wide text-white  md:text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-mobile"
                 >
                   Mobile No
                   <sup className="text-red-500 font-[800] text-[15px]">*</sup>
@@ -157,7 +157,7 @@ const GetInTouch = () => {
                 <input
                   name="mobileno"
                   onChange={handleChange}
-                  className={`appearance-none block w-full bg-gray-200 text-gray-700 border ${
+                  className={`appearance-none block w-full bg-gray-200 text-white  md:text-gray-700 border ${
                     formValidation?.mobileno
                       ? "border-red-500"
                       : "border-gray-200"
@@ -173,8 +173,8 @@ const GetInTouch = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-message"
+                  className="block uppercase tracking-wide text-white  md:text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-message"
                 >
                   Message
                   <sup className="text-red-500 font-[800] text-[15px]">*</sup>
@@ -184,7 +184,7 @@ const GetInTouch = () => {
                   id="grid-message"
                   name="message"
                   onChange={handleChange}
-                  class={`appearance-none block w-full bg-gray-200 text-gray-700 border ${
+                  className={`appearance-none block w-full bg-gray-200 text-white  md:text-gray-700 border ${
                     formValidation?.message
                       ? "border-red-500"
                       : "border-gray-200"

@@ -3,12 +3,12 @@ import React from "react";
 export default function Services() {
   return (
     <section id="services">
-      <div className="container pt-5">
+      <div className="align-center-body bg-gradient-to-l from-blue-950 to-slate-600 pt-5">
         <div className="text-center">
-          <h2 className="text-headingColor font-[800] text-[2.4rem] mb-5">
-            What do I help
+          <h2 className="text-white font-[800] text-[2.4rem] mb-5">
+            Professional Experience
           </h2>
-          <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[500] text-[16px] leading-7">
+          <p className="lg:max-w-[600px] lg:mx-auto text-white font-[500] text-[500] text-[16px] leading-7">
             {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
             consequatur magnam sint deleniti rem, facilis distinctio
             reprehenderit nihil tempora atque. */}
@@ -33,7 +33,7 @@ export default function Services() {
                     <div
                       data-aos="fade-right"
                       data-aos-duration="1500"
-                      className="bg-white p-4 rounded shadow group hover:bg-yellow-400 cursor-pointer ease-in duration-150"
+                      className="bg-blue-950 p-4 rounded shadow group hover:bg-slate-600 cursor-pointer ease-in duration-150"
                     >
                       <h3 className="text-primaryColor font-[800] mb-3 group-hover:text-white group-hover:font-[600] text-2xl">
                         Frontend developer
@@ -41,7 +41,7 @@ export default function Services() {
                       <h4 className="text-yellow-400 font-[600] mb-1 group-hover:text-white group-hover:font-[600] text-[16px]">
                         Sep 2022 - Jul 2023
                       </h4>
-                      <p className="text-[15px] text-smallTextColor  group-hover:text-white group-hover:font-[500] leading-7">
+                      <p className="text-[15px] text-gray-600  group-hover:text-white group-hover:font-[500] leading-7">
                         Converting Figma files into Responsive web Design using
                         Reactjs, Material UI, and handling APIs.
                       </p>
@@ -64,7 +64,7 @@ export default function Services() {
                       data-aos="fade-left"
                       data-aos-delay="300"
                       data-aos-duration="1500"
-                      className="bg-white p-4 rounded shadow group hover:bg-yellow-400 cursor-pointer ease-in duration-150"
+                      className="bg-blue-950 p-4 rounded shadow group hover:bg-slate-600 cursor-pointer ease-in duration-150"
                     >
                       <h3 className="text-primaryColor font-[800] mb-2 group-hover:text-white group-hover:font-[600] text-2xl">
                         SAP UI Trainee
@@ -72,7 +72,7 @@ export default function Services() {
                       <h4 className="text-yellow-400 font-[600] mb-1 group-hover:text-white group-hover:font-[600] text-[16px]">
                         Nov 2021 - Jul 2022
                       </h4>
-                      <p className="text-[15px] text-smallTextColor group-hover:text-white  group-hover:font-[500] leading-7">
+                      <p className="text-[15px] text-gray-600 group-hover:text-white  group-hover:font-[500] leading-7">
                         Creating user for clients and configuration of
                         Destination, IDP Handling and User Group Assign to
                         Cockpit Group/Role .

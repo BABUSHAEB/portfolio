@@ -6,7 +6,10 @@ export default function Footer() {
   // let date = new Date();
   // date = date.getFullYear();
   return (
-    <footer className="bg-turquoise  relative  ">
+    <footer
+      id="footer"
+      className="bg-gradient-to-b from-blue-950 to-red-400 align-center-body  relative  "
+    >
       <div className="container h-[200px]  w-[100%]">
         <div
           data-aos="fade-up"

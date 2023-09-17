@@ -15,6 +15,8 @@ export default function HeroSection() {
         "JavaScript Developer",
         "ReactJs Developer",
         "Web Developer",
+        "MERN Developer",
+        "NextJs Developer",
       ], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 200,
@@ -30,9 +32,12 @@ export default function HeroSection() {
     };
   }, []);
   return (
-    <section className="pt-0 mx-[auto]" id="about">
-      <div className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 pt-[80px] md:py-[80px] pb-0 md:flex-row flex-col-reverse gap-[40px] md:gap-0 items-center">
+    <section
+      className="pt-3 align-center-body bg-gradient-to-r from-blue-950 to-slate-600"
+      id="about"
+    >
+      <div className=" mx-[auto] text-gray-600 body-font max-w-[1920px]">
+        <div className=" mx-auto flex px-5 pt-[80px] md:py-[80px] pb-0 md:flex-row flex-col-reverse gap-[40px] md:gap-0 items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-start">
             <h1
               data-aos="fade-right"
@@ -46,7 +51,7 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            <p className="mb-8 text-black  leading-relaxed">
+            <p className="mb-8 text-white  leading-relaxed">
               I am a seasoned front-end developer with a strong background in
               both the software industry and startup sector. I am actively
               seeking a fulfilling role where I can apply my expertise in

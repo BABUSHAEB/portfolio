@@ -36,7 +36,7 @@ export default function Header() {
     <>
       <nav
         ref={headerRef}
-        className="bg-white w-full h-[80px] leading-[80px] flex items-center fixed z-20 top-0 left-0 "
+        className="bg-transparent  text-gray-400 w-full h-[80px] leading-[80px] flex items-center fixed z-20 top-0 left-0 "
       >
         <div className="container">
           <div className="w-full flex flex-wrap items-center justify-between mx-0 px-[10px] py-[20px] md:mx-auto md:px-3 md:py-0 ">
@@ -46,12 +46,8 @@ export default function Header() {
                   A
                 </span>
                 <div className="leading-[20px]">
-                  <h2 className="text-xl text-smallTextColor font-[700]">
-                    Abhishek
-                  </h2>
-                  <p className="text-smallTextColor text-[14px] font-[500]">
-                    Singh
-                  </p>
+                  <h2 className="text-xl text-gray-300 font-[700]">Abhishek</h2>
+                  <p className="text-gray-300 text-[14px] font-[500]">Singh</p>
                 </div>
               </div>
             </a>
@@ -84,7 +80,7 @@ export default function Header() {
               } w-full md:flex md:w-auto md:order-1`}
               id="navbar-sticky"
             >
-              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-slate-100 xs:absolute xs:top-[100px] md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
                 <li>
                   <a
                     onClick={handleClick}

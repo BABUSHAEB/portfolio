@@ -15,16 +15,14 @@ function App() {
 
   return (
     <>
-      <div>
+      <main>
         <Header />
-        <main className="container">
-          <HeroSection />
-          <Services />
-          <Portfoilo />
-          <LetsConnectSection />
-        </main>
+        <HeroSection />
+        <Services />
+        <Portfoilo />
+        <LetsConnectSection />
         <Footer />
-      </div>
+      </main>
     </>
   );
 }
