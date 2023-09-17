@@ -12,7 +12,7 @@ function ImageSlider({ filtered }) {
     prevArrow: <></>,
     nextArrow: (
       <button>
-        <i class="ri-arrow-drop-right-line"></i>
+        <i className="ri-arrow-drop-right-line"></i>
       </button>
     ),
     autoplay: true,

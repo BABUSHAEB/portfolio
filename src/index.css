@@ -12,6 +12,9 @@ body {
 .align-center-body {
   @apply flex flex-col justify-center items-center;
 }
+section {
+  overflow: hidden;
+}
 
 .slick-slider {
   overflow: clip;

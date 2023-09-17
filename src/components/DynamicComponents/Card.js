@@ -17,7 +17,7 @@ export default function Card(props) {
   return (
     <div className=" relative  w-[80vw] md:w-[600px] mx-2 md:mx-auto mt-[30px]">
       <div
-        className="h-[320px] "
+        className="h-[60vh]  md:h-[320px] rounded-[10px] "
         style={{
           background: `url(${
             Image ? Image : "https://dummyimage.com/720x400"
@@ -34,7 +34,7 @@ export default function Card(props) {
       >
         {hovered && (
           <>
-            <div className=" h-full px-3 py-4 bg-opacity-90 bg-white z-[555]">
+            <div className=" h-full px-3 py-4 bg-opacity-90 bg-white z-[555] rounded-[10px] ">
               <h1 className=" text-[22px]  text-primaryColor font-[900] mb-3">
                 {Title}
               </h1>
