@@ -2,8 +2,16 @@ import React, { useState } from "react";
 
 export default function Card(props) {
   let { project } = props ?? {};
-  let { Title, Project, Image, Skills, Description, ViewProject, ViewCode } =
-    project;
+  let {
+    Title,
+    Project,
+    Date,
+    Image,
+    Skills,
+    Description,
+    ViewProject,
+    ViewCode,
+  } = project;
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -15,9 +23,9 @@ export default function Card(props) {
             Image ? Image : "https://dummyimage.com/720x400"
           })`,
           backgroundRepeat: "no-repeat",
-          // backgroundPosition: "top",
-          // backgroundOrigin: "center",
-          objectFit: "cover",
+          backgroundPosition: "top",
+          backgroundOrigin: "center",
+          objectFit: "fill",
 
           width: "100%",
         }}
@@ -76,7 +84,7 @@ export default function Card(props) {
         {Project}
       </span>
       <p className=" px-3 py-2 my-2 rounded-xl text-gray-300  text-[18px] ">
-        {Project}
+        {Date}
       </p>
     </div>
   );

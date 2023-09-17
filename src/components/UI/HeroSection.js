@@ -33,7 +33,7 @@ export default function HeroSection() {
   }, []);
   return (
     <section
-      className="pt-3 align-center-body bg-gradient-to-r from-blue-950 to-slate-600"
+      className="pt-3 align-center-body bg-gradient-to-r from-blue-950 to-slate-600 py-[40px]"
       id="about"
     >
       <div className=" mx-[auto] text-gray-600 body-font max-w-[1920px]">

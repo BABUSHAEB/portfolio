@@ -7,6 +7,7 @@ export const PersonalProjects = [
     IDE: "Visual Studio Code",
     Role: "UI Development",
     Project: "ReactJs",
+    Date: "Jul 2022",
 
     Skills: [
       "JSX",
@@ -31,6 +32,7 @@ export const PersonalProjects = [
     IDE: "Visual Studio Code",
     Role: "UI Development",
     Project: "ReactJs",
+    Date: " ",
 
     Skills: [
       "JSX",
@@ -54,6 +56,7 @@ export const PersonalProjects = [
     IDE: "Visual Studio Code",
     Role: "UI Development",
     Project: "ReactJs",
+    Date: "Aug 2023",
 
     Skills: [
       "JSX",
@@ -77,6 +80,7 @@ export const PersonalProjects = [
     IDE: "Visual Studio Code",
     Role: "UI Development",
     Project: "ReactJs",
+    Date: "Jul 2023",
     Skills: [
       "JSX",
       "CSS",
@@ -91,6 +95,56 @@ export const PersonalProjects = [
       "I have created this Application to Ehance my knowledge towards in API Integration.In this application I have use Axios Package to Use API Integration with Error Handling and I have done Validation to Input Field .I'm fetching data from Open weather API . I'm showing Sunrise, Sunset and Max , Min Feel Like tempurature ,Current Date.Converting Kevlin to Celcus",
     ViewProject: "https://movie-mega.vercel.app/",
     ViewCode: " https://github.com/BABUSHAEB/MovieMega",
+    status: "new",
+  },
+  {
+    Title: "Next Blog App Created fs Modules CRUD",
+    Platform: "React Js Library",
+    Image: "https://i.postimg.cc/wjfk5FW7/blogs.png",
+    IDE: "Visual Studio Code",
+    Role: "UI Development",
+    Project: "NextJS",
+    Date: "Sep 2023",
+    Skills: [
+      "NextJs 13.4.19",
+      "App Route",
+      "Next API CRUD",
+      "Tailwind CSS",
+      "Nodejs",
+      "fs Modules",
+      "React Router DOM",
+    ],
+    Description:
+      "I created this app to warm up NextJs 13.4.19 new feature. I have used TailwindCSS",
+    ViewProject: "https://github.com/BABUSHAEB/MovieMega",
+    ViewCode: " https://github.com/BABUSHAEB/MovieMega",
+    status: "new",
+  },
+  {
+    Title: "Blog Posts",
+    Platform: "React Js Library",
+    Image: "https://i.postimg.cc/g004Z1mw/blogs-post.png",
+    IDE: "Visual Studio Code",
+    Role: "UI Development",
+    Project: "NextJS",
+    Date: "Sep 2023",
+    Skills: [
+      "NextJs 13.4.19",
+      "MongoDB",
+      "Next-Auth",
+      "Google Cloud",
+      "App Route",
+      "Next API Route",
+      "Tailwind CSS",
+      "Nodejs",
+      "fs Modules",
+      "TinyMCE",
+      "React Router DOM",
+    ],
+    Description:
+      "I created this app to warm up NextJs 13.4.19 new feature. In this App which fullstack , I have used Nexth-Auth to Authentication from Google Provider, We can do CRUD Operation and for storage there is MongoDB",
+    ViewProject: "https://blogs-post.vercel.app/",
+    ViewCode: " https://github.com/BABUSHAEB/fullstack-nextjs-next-auth",
     status: "new",
   },
 ];

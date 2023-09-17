@@ -6,7 +6,7 @@ export default function LetsConnectSection() {
       id="letsConnect"
       className="bg-gradient-to-t from-blue-950 to-slate-600 align-center-body "
     >
-      <div className=" max-w-[1920px] flex flex-wrap justify-center px-0 md:px-[40px] my-[80px] align-center">
+      <div className=" max-w-[1920px] flex flex-wrap justify-center px-[10px] md:px-[80px] my-[80px] align-center">
         <div className=" text-gray-400 text-[18px] gap-3 md:w-[80%] lg:w-1/3 mx-[auto]  md:my-[auto]  md:px-[30px] w-[80%] py-[80px] my-[auto]">
           Experienced front-end developer with a robust software industry and
           startup background. Seeking a challenging role to leverage expertise

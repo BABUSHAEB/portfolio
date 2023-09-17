@@ -3,7 +3,7 @@ import React from "react";
 export default function Services() {
   return (
     <section id="services">
-      <div className="align-center-body bg-gradient-to-l from-blue-950 to-slate-600 pt-5">
+      <div className="align-center-body bg-gradient-to-l from-blue-950 to-slate-600 pt-[80px]">
         <div className="text-center">
           <h2 className="text-white font-[800] text-[2.4rem] mb-5">
             Professional Experience

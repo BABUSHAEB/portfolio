@@ -27,7 +27,7 @@ export default function Portfoilo() {
   return (
     <section className="bg-gradient-to-r from-blue-950 to-slate-600 align-center-body  px-[30px] py-[60px]">
       <div className=" max-w-[1920px]">
-        <div id="Skills" className="mb-[80px] ">
+        <div id="Skills" className="mb-[80px] px-[30px]">
           <div data-aos="fade-up" className="relative mb-5">
             <h3 className="text-[24px] font-black text-white sm:text-2xl">
               My Skills
