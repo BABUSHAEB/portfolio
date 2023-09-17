@@ -1,7 +1,16 @@
 import React from "react";
 import Slider from "react-slick";
 import Card from "./Card";
-
+const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+  <button
+    {...props}
+    aria-hidden="true"
+    // aria-disabled={currentSlide === slideCount - 1 ? true : false}
+    type="button"
+  >
+    <i className="ri-arrow-drop-right-line"></i>
+  </button>
+);
 function ImageSlider({ filtered }) {
   var settings = {
     dots: false,
@@ -10,11 +19,7 @@ function ImageSlider({ filtered }) {
     slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: <></>,
-    nextArrow: (
-      <button>
-        <i className="ri-arrow-drop-right-line"></i>
-      </button>
-    ),
+    nextArrow: <SlickArrowRight />,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
