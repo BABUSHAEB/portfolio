@@ -11,7 +11,6 @@ export default function Portfoilo() {
       })
     ),
   ];
-  console.log(ProjectsTypes);
 
   const [filtered, setFiltered] = useState([]);
 
