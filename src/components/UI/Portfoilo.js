@@ -4,6 +4,15 @@ import ProgressBar from "../DynamicComponents/ProgressBar";
 import ImageSlider from "../DynamicComponents/ImageSlider";
 
 export default function Portfoilo() {
+  const ProjectsTypes = [
+    ...new Set(
+      PersonalProjects.map((project) => {
+        return project.Project;
+      })
+    ),
+  ];
+  console.log(ProjectsTypes);
+
   const [filtered, setFiltered] = useState([]);
 
   const filteredHandle = (e) => {
@@ -83,9 +92,15 @@ export default function Portfoilo() {
                   id="projects"
                 >
                   <option value="all">All</option>
-                  <option value="ReactJs">ReactJs</option>
-                  <option value="NextJs">Nextjs</option>
-                  <option value="Mern Stack">MERN Stack</option>
+                  {ProjectsTypes?.map((types, i) => {
+                    return (
+                      <option key={i} value={types}>
+                        {types}
+                      </option>
+                    );
+                  })}
+                  {/* <option value="NextJs">Nextjs</option>
+                  <option value="Mern Stack">MERN Stack</option> */}
                 </select>
               </div>
               <span className="h-[1.5px] right-0 absolute w-[85%] md:w-[90%] bg-gray-300 block"></span>

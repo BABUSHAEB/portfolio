@@ -33,15 +33,6 @@ function ImageSlider({ filtered }) {
         },
       },
     ],
-
-    // dots: true,
-    // infinite: true,
-    // slidesToShow: 3,
-    // slidesToScroll: 1,
-    // autoplay: true,
-    // speed: 2000,
-    // autoplaySpeed: 2000,
-    // cssEase: "linear",
   };
 
   return (
@@ -49,7 +40,7 @@ function ImageSlider({ filtered }) {
       <Slider {...settings}>
         {filtered?.map((project, i) => {
           return (
-            <div key={i} className="">
+            <div key={i} className="mx-auto md:mx-4">
               <Card project={project} />
             </div>
           );
