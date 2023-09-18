@@ -5,7 +5,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
   <button
     {...props}
     aria-hidden="true"
-    // aria-disabled={currentSlide === slideCount - 1 ? true : false}
+    aria-disabled={currentSlide === slideCount - 1 ? true : false}
     type="button"
   >
     <i className="ri-arrow-drop-right-line"></i>
@@ -16,7 +16,7 @@ function ImageSlider({ filtered }) {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: filtered.length !== 2 ? 2 : 1,
     slidesToScroll: 1,
     prevArrow: <></>,
     nextArrow: <SlickArrowRight />,

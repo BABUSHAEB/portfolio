@@ -5,6 +5,7 @@ import ImageSlider from "../DynamicComponents/ImageSlider";
 
 export default function Portfoilo() {
   const ProjectsTypes = [
+    "All",
     ...new Set(
       PersonalProjects.map((project) => {
         return project.Project;
@@ -90,7 +91,6 @@ export default function Portfoilo() {
                   name="project"
                   id="projects"
                 >
-                  <option value="all">All</option>
                   {ProjectsTypes?.map((types, i) => {
                     return (
                       <option key={i} value={types}>
@@ -98,8 +98,6 @@ export default function Portfoilo() {
                       </option>
                     );
                   })}
-                  {/* <option value="NextJs">Nextjs</option>
-                  <option value="Mern Stack">MERN Stack</option> */}
                 </select>
               </div>
               <span className="h-[1.5px] right-0 absolute w-[85%] md:w-[90%] bg-gray-300 block"></span>
